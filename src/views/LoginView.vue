@@ -2,8 +2,6 @@
 import { useRouter } from 'vue-router'
 import { useAuthStore } from '@/stores/auth'
 import { onMounted, ref } from 'vue'
-import BaseButton from '@/components/BaseButton.vue'
-import BaseInput from '@/components/BaseInput.vue'
 
 const { users, user, authLogin } = useAuthStore()
 

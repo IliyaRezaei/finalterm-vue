@@ -1,6 +1,4 @@
 <script setup>
-import BaseInput from '@/components/BaseInput.vue'
-import BaseButton from '@/components/BaseButton.vue'
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { useAuthStore } from '@/stores/auth'
@@ -40,7 +38,7 @@ const error = ref({})
       v-model="user.phoneNumber"
       label="لطفا شماره تلفن همراه خود را وارد کنید"
       name="phoneNumber"
-      placeholder="مثال                                      ۰۹۱۹۰۹۹۰۹۰۹"
+      placeholder="مثال                                                ۰۹۱۹۰۹۹۰۹۰۹"
       :error="isPhoneNumberValid.errorMessage"
       @keyup.enter="continueAuth"
     ></BaseInput>

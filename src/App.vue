@@ -40,7 +40,6 @@ import TheFooter from './components/TheFooter.vue'
 
 #footer {
   width: 100%;
-  position: relative;
   bottom: 0;
 }
 </style>

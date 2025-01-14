@@ -1,5 +1,4 @@
 <script setup>
-import { computed } from 'vue'
 const props = defineProps({
   firstSquareColor: {
     type: String,
@@ -15,18 +14,10 @@ const props = defineProps({
   },
 })
 
-const firstSquare = computed(() => {
-  return { borderColor: `${props.firstSquareColor}` }
-})
-const secondSquare = computed(() => {
-  return { borderColor: `${props.secondSquareColor}` }
-})
-const logo = computed(() => {
-  return { color: `${props.logoColor}` }
-})
-const plus = computed(() => {
-  return { backgroundColor: `${props.logoColor}` }
-})
+const firstSquare = { borderColor: `${props.firstSquareColor}` }
+const secondSquare = { borderColor: `${props.secondSquareColor}` }
+const logo = { color: `${props.logoColor}` }
+const plus = { backgroundColor: `${props.logoColor}` }
 </script>
 
 <template>
