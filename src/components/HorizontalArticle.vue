@@ -16,9 +16,6 @@ const props = defineProps([
 ])
 </script>
 
-<!-- ye component baraye profile(user-image,user-name,article-date dashte bashe),
-  ye component articleContext(article title, article text dashte bashe),
-   va article-info(zamane motale va category) -->
 <template>
   <div class="horizontal-article-container">
     <div class="horizontal-article-container-image">

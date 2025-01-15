@@ -12,7 +12,7 @@ const topArticles = computed(() => {
 })
 
 const otherArticles = computed(() => {
-  return articles.filter((x) => x.isTopArticle === false)
+  return articles.filter((x) => x.isTopArticle === false && x.isSlideArticle === false)
 })
 </script>
 

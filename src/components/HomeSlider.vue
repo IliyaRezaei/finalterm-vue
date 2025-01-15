@@ -31,7 +31,7 @@ function backgroundImage(articleImageUrl) {
     :loop="true"
     :navigation="true"
     :modules="modules"
-    initial-slide="2"
+    :initial-slide="slideArticles.length - 1"
     class="swiper-container"
   >
     <swiper-slide
